@@ -17,7 +17,7 @@ class Sorting {
         }
     }
 
-    selectionSort() {
+    async selectionSort() {
         let arr = this.unsortedArray
         let currentItem, smallest
 
@@ -32,6 +32,8 @@ class Sorting {
                     
                 }
             }
+
+            await sleep(10)
                 
             arr[minIndex].color = {
                 red: 0,

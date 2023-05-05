@@ -1,6 +1,6 @@
 const canvasData = {
-  width: 1200,
-  height: 800,
+  width: 1820,
+  height: 980,
   color: 55
 }
 
@@ -23,4 +23,9 @@ function keyPressed() {
       sortingObj.selectionSort()
       break
   }
+}
+
+// sleep function to enable the animation/visualisation
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
 }
