@@ -27,20 +27,34 @@ class Sorting {
             
             for (let j = i + 1 ; j < arr.length; j++) {
 
+               
+            
                 if(arr[j].height < arr[minIndex].height) {
                     minIndex = j
                     
                 }
+ 
             }
 
-            await sleep(10)
-                
-            arr[minIndex].color = {
-                red: 0,
-                green: 150,
-                blue: 50
+            
+
+            await sleep(50)
+
+            if (minIndex === i) {
+                arr[minIndex].color = {
+                    red: 255,
+                    green: 50,
+                    blue: 50
+                }
+            } else {
+                arr[minIndex].color = {
+                    red: 0,
+                    green: 150,
+                    blue: 50
+                }
             }
 
+            
             currentItem = arr[i]
             smallest = arr[minIndex]
 
